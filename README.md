@@ -1,4 +1,4 @@
-# News Article Sentiment Analysis with Visualization
+# 1.News Article Sentiment Analysis with Visualization
 
 ## Overview
 This project demonstrates a basic sentiment analysis pipeline on a sample dataset of news articles. It includes:
