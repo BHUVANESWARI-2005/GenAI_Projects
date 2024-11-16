@@ -31,8 +31,11 @@ To run this project, install the following libraries:
 The Machine Learning AI Chatbot leverages a Retrieval-Augmented Generation (RAG) framework to provide precise answers to machine learning-related queries. It uses DistilBERT (a distilled version of BERT) for question answering and FAISS for efficient similarity search over document chunks. The chatbot processes large datasets, retrieves contextually relevant information, and generates accurate answers in real-time.
 
 ## Pre-trained models used:
-DistilBERT: A distilled version of BERT used for question answering.
-Sentence-Transformers: Used for generating embeddings of document chunks
+**DistilBERT**: A distilled version of BERT used for question answering.
+
+
+
+**Sentence Transformer**: Used for generating embeddings of document chunks
 
 ## Required Libraries
 Install the required libraries using:
