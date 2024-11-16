@@ -21,5 +21,21 @@ These visualizations help analyze sentiment trends in news articles and observe 
 ## Required Libraries
 
 To run this project, install the following libraries:
+
+-pip install pandas matplotlib seaborn transformers
+
+
+# 2.ChatBot Using Retrieval-Augmented Generation (RAG)
+
+## Overview
+The Machine Learning AI Chatbot leverages a Retrieval-Augmented Generation (RAG) framework to provide precise answers to machine learning-related queries. It uses DistilBERT (a distilled version of BERT) for question answering and FAISS for efficient similarity search over document chunks. The chatbot processes large datasets, retrieves contextually relevant information, and generates accurate answers in real-time.
+
+## Pre-trained models used:
+DistilBERT: A distilled version of BERT used for question answering.
+Sentence-Transformers: Used for generating embeddings of document chunks
+
+## Required Libraries
+Install the required libraries using:
+
 ```bash
-pip install pandas matplotlib seaborn transformers
+pip install pymupdf sentence-transformers faiss-cpu transformers
