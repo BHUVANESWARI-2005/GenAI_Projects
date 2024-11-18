@@ -57,4 +57,25 @@ Install the required libraries using:
 
 -pip install streamlit transformers torch pillow
 
+# 4.Text Summarization Using BART
+
+## Project Overview
+This project is a Text Summarizer Application that extracts textual content from PDF files and generates a concise summary using state-of-the-art Transformer models. It utilizes Streamlit for an intuitive web-based interface, allowing users to upload PDF documents and receive a textual summary with just a click. The underlying model is based on BART (Bidirectional and Auto-Regressive Transformer), a robust summarization model provided by the Hugging Face Transformers library.
+
+## How it works
+1.Upload the PDF: Users upload a .pdf file through the Streamlit interface. The application accepts multi-page PDFs and processes them seamlessly.
+
+2.Text Extraction: The app uses PyMuPDF to extract text from all pages of the uploaded PDF, focusing on textual content and ignoring non-text elements like images.
+
+3.Text Summarization: The extracted text is passed to the BART model (via Hugging Face Transformers), which generates a concise summary. Parameters like maximum and minimum lengths ensure the summary is informative and well-structured.
+
+4.Display Results: The app previews the extracted text and displays the summary in a clean interface. Users can review, copy, and use the summary directly.
+
+
+## Required Libraries
+Install the required libraries using:
+
+-pip install streamlit transformers PyMuPDF Pillow
+
+
 
