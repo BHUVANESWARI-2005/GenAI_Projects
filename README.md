@@ -40,5 +40,21 @@ The Machine Learning AI Chatbot leverages a Retrieval-Augmented Generation (RAG)
 ## Required Libraries
 Install the required libraries using:
 
-```bash
-pip install pymupdf sentence-transformers faiss-cpu transformers
+-pip install pymupdf sentence-transformers faiss-cpu transformers
+
+# 3.Image Captioning with Vision-Language Model(BLIP)
+## Project Overview
+This project demonstrates how to build an Image Captioning App using the BLIP (Bootstrapped Language-Image Pre-training) model and Streamlit. Users can upload an image, and the app generates a descriptive caption for the image using the Salesforce BLIP model for conditional image captioning.
+
+## How it works
+1.The uploaded image is processed using the BLIPProcessor.
+
+2.The processed image is passed to the BLIPForConditionalGeneration model to generate a caption.
+
+3.The caption is decoded and displayed in the Streamlit app.
+## Required Libraries
+Install the required libraries using:
+
+-pip install streamlit transformers torch pillow
+
+
