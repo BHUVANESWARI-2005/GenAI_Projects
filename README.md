@@ -84,13 +84,13 @@ This project leverages dense retrieval to enable a question-answering system tha
 
 ## How it works
 
-1.Dense Retrieval with BERT Embeddings:The system converts both the PDF content and user queries into dense vector embeddings using BERT. This allows for capturing semantic meaning rather than relying on exact keyword matches, ensuring more relevant and contextually accurate results.
+1.Dense Retrieval with BERT Embeddings: The system converts both the PDF content and user queries into dense vector embeddings using BERT. This allows for capturing semantic meaning rather than relying on exact keyword matches, ensuring more relevant and contextually accurate results.
 
-2.FAISS Index for Efficient Search:Once the document is transformed into embeddings, a FAISS index is built to store and quickly retrieve the most relevant document segments. FAISS enables fast similarity searches by calculating the distance between query and document embeddings.
+2.FAISS Index for Efficient Search: Once the document is transformed into embeddings, a FAISS index is built to store and quickly retrieve the most relevant document segments. FAISS enables fast similarity searches by calculating the distance between query and document embeddings.
 
-**3.Contextual Answer Extraction:**After retrieving the most relevant document snippet, the BERT Question Answering model is used to extract the precise answer from the text. The system uses the start and end logits to pinpoint the answer span within the retrieved content.
+3.Contextual Answer Extraction: After retrieving the most relevant document snippet, the BERT Question Answering model is used to extract the precise answer from the text. The system uses the start and end logits to pinpoint the answer span within the retrieved content.
 
-**4.Query-Document Matching: **The system performs dense retrieval by comparing the embedding of the user’s question with the document embeddings in the FAISS index. This results in a more intelligent retrieval process, enabling the chatbot to provide accurate, contextually-relevant answers based on the document content.
+4.Query-Document Matching: The system performs dense retrieval by comparing the embedding of the user’s question with the document embeddings in the FAISS index. This results in a more intelligent retrieval process, enabling the chatbot to provide accurate, contextually-relevant answers based on the document content.
 
 ## Required Libraries
 
