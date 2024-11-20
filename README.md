@@ -98,3 +98,27 @@ Install the required libraries using:
 
 -pip install torch transformers faiss-cpu PyPDF2
 
+
+# 6.Text-to-Speech System Using Quantized Model
+
+This project demonstrates a simple Text-to-Speech (TTS) system that converts input text into an audio file using a pre-trained quantized TTS model. The model generates natural-sounding speech by synthesizing mel-spectrograms and converting them into audio waveforms. The quantized model used in this project is the Tacotron2-DDC model from the TTS library.It utilizes the Tacotron2-DDC architecture for high-quality speech synthesis. Quantization is a technique applied to deep learning models to reduce their size and speed up inference without significantly sacrificing performance. 
+
+## How it works
+
+1.Input Text: Provide a text string to the TTS system.
+
+2.Model Loading: The pre-trained Tacotron2-DDC model is loaded and configured for faster processing.
+
+3.Speech Synthesis: The input text is processed to produce an audio file in .wav format.
+
+4.Output: The synthesized audio file is saved to the specified file path.
+
+The system is designed to be efficient and easy to use, making it ideal for quick speech synthesis tasks.
+
+## Required Libraries
+
+Install the required libraries using:
+
+-pip install TTS transformers soundfile torch
+
+
