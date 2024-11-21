@@ -3,7 +3,9 @@
 ## Overview
 This project demonstrates a basic sentiment analysis pipeline on a sample dataset of news articles. It includes:
 1. **Pre-trained Sentiment Analysis Model**: Using `cardiffnlp/twitter-roberta-base-sentiment-latest` to classify news articles.
+  
 2. **Interactive Prediction**: Allows users to enter custom news articles and receive real-time sentiment predictions.
+   
 3. **Data Visualization**: Displays a bar plot of sentiment distribution and a line plot of confidence scores for live predictions.
 
 ## Visualization
@@ -22,7 +24,7 @@ These visualizations help analyze sentiment trends in news articles and observe 
 
 To run this project, install the following libraries:
 ```bash
--pip install pandas matplotlib seaborn transformers
+pip install pandas matplotlib seaborn transformers
 ```
 
 # 2.ChatBot Using Retrieval-Augmented Generation (RAG)
@@ -40,7 +42,7 @@ The Machine Learning AI Chatbot leverages a Retrieval-Augmented Generation (RAG)
 
 Install the required libraries using:
 ```bash
--pip install pymupdf sentence-transformers faiss-cpu transformers
+pip install pymupdf sentence-transformers faiss-cpu transformers
 ```
 
 # 3.Image Captioning with Vision-Language Model(BLIP)
@@ -57,7 +59,7 @@ This project demonstrates how to build an Image Captioning App using the BLIP (B
 ## Required Libraries
 Install the required libraries using:
 ```bash
--pip install streamlit transformers torch pillow
+pip install streamlit transformers torch pillow
 ```
 
 # 4.Text Summarization Using BART
@@ -79,7 +81,7 @@ This project is a Text Summarizer Application that extracts textual content from
 ## Required Libraries
 Install the required libraries using:
 ```bash
--pip install streamlit transformers PyMuPDF Pillow
+pip install streamlit transformers PyMuPDF Pillow
 ```
 
 # 5.Question Answering System with Dense Retrival and BERT
@@ -100,7 +102,7 @@ This project leverages dense retrieval to enable a question-answering system tha
 
 Install the required libraries using:
 ```bash
--pip install torch transformers faiss-cpu PyPDF2
+pip install torch transformers faiss-cpu PyPDF2
 ```
 
 # 6.Text-to-Speech System Using Quantized Model
@@ -123,7 +125,7 @@ The system is designed to be efficient and easy to use, making it ideal for quic
 
 Install the required libraries using:
 ```bash
--pip install TTS transformers soundfile torch
+pip install TTS transformers soundfile torch
 ```
 
 # 7.Multilingual Sentiment Analysis Using XLM-RoBERTa
