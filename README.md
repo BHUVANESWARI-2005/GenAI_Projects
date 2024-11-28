@@ -1,6 +1,7 @@
 # 1.News Article Sentiment Analysis with Visualization
 
 ## Overview
+
 This project demonstrates a basic sentiment analysis pipeline on a sample dataset of news articles. It includes:
 1. **Pre-trained Sentiment Analysis Model**: Using `cardiffnlp/twitter-roberta-base-sentiment-latest` to classify news articles.
   
@@ -9,6 +10,7 @@ This project demonstrates a basic sentiment analysis pipeline on a sample datase
 3. **Data Visualization**: Displays a bar plot of sentiment distribution and a line plot of confidence scores for live predictions.
 
 ## Visualization
+
 The project includes two main visualizations:
 
 **Sentiment Distribution Bar Plot:**
@@ -30,6 +32,7 @@ pip install pandas matplotlib seaborn transformers
 # 2.ChatBot Using Retrieval-Augmented Generation (RAG)
 
 ## Overview
+
 The Machine Learning AI Chatbot leverages a Retrieval-Augmented Generation (RAG) framework to provide precise answers to machine learning-related queries. It uses DistilBERT (a distilled version of BERT) for question answering and FAISS for efficient similarity search over document chunks. The chatbot processes large datasets, retrieves contextually relevant information, and generates accurate answers in real-time.
 
 ## Pre-trained models used:
@@ -46,6 +49,7 @@ pip install pymupdf sentence-transformers faiss-cpu transformers
 ```
 
 # 3.Image Captioning with Vision-Language Model(BLIP)
+
 ## Project Overview
 This project demonstrates how to build an Image Captioning App using the BLIP (Bootstrapped Language-Image Pre-training) model and Streamlit. Users can upload an image, and the app generates a descriptive caption for the image using the Salesforce BLIP model for conditional image captioning.
 
@@ -65,6 +69,7 @@ pip install streamlit transformers torch pillow
 # 4.Text Summarization Using BART
 
 ## Project Overview
+
 This project is a Text Summarizer Application that extracts textual content from PDF files and generates a concise summary using state-of-the-art Transformer models. It utilizes Streamlit for an intuitive web-based interface, allowing users to upload PDF documents and receive a textual summary with just a click. The underlying model is based on BART (Bidirectional and Auto-Regressive Transformer), a robust summarization model provided by the Hugging Face Transformers library.
 
 ## How it works
@@ -86,6 +91,8 @@ pip install streamlit transformers PyMuPDF Pillow
 
 # 5.Question Answering System with Dense Retrival and BERT
 
+## Project Overview
+
 This project leverages dense retrieval to enable a question-answering system that extracts information from PDF documents. By converting both the document content and user queries into dense vector embeddings using BERT, the system can retrieve the most relevant document segments based on semantic similarity rather than exact keyword matches. The retrieval process is accelerated using FAISS, a powerful similarity search library. This approach ensures efficient and contextually accurate answers, even in large and unstructured text data like PDFs.
 
 ## How it works
@@ -106,6 +113,7 @@ pip install torch transformers faiss-cpu PyPDF2
 ```
 
 # 6.Text-to-Speech System Using Quantized Model
+
 ## Project Overiew
 
 This project demonstrates a simple Text-to-Speech (TTS) system that converts input text into an audio file using a pre-trained quantized TTS model. The model generates natural-sounding speech by synthesizing mel-spectrograms and converting them into audio waveforms. The quantized model used in this project is the Tacotron2-DDC model from the TTS library.It utilizes the Tacotron2-DDC architecture for high-quality speech synthesis. Quantization is a technique applied to deep learning models to reduce their size and speed up inference without significantly sacrificing performance. 
@@ -158,6 +166,7 @@ pip install transformers torch
 ```
 
 # 8.Few-Shot Learning for Image Classification
+
 ## Project Overview
 
 This project implements a few-shot learning model using Prototypical Networks to classify images into categories with minimal training samples per class. It employs TensorFlow and Keras to build a simple convolutional neural network (CNN) as the backbone for feature extraction and uses prototype-based classification to determine the closest class for query images.
@@ -178,4 +187,25 @@ Install the required libraries using:
 
 ```bash
 pip install tensorflow numpy opencv-python scikit-learn pillow
+```
+# 9.Neural Network Quantization
+
+## Project Overview
+
+This project demonstrates training a neural network on the MNIST dataset using TensorFlow, converting it into a TensorFlow Lite model with dynamic range quantization, and testing the quantized model's predictions on user-selected images. The quantized model is smaller and optimized for inference on edge devices while retaining high accuracy.
+
+## How it works
+
+**1.Model Training:** A neural network is trained on MNIST data and saved as **mnist_model.h5**.
+
+**2.Quantization:** The model is converted to **mnist_model_quantized.tflite** with reduced size and computation using TensorFlow Lite's dynamic range quantization.
+
+**3.Interactive Testing:** Users input an index to display and test an image. The quantized model predicts the digit, and the prediction is compared with the true label.
+
+## Required Libraries
+
+Install the required libraries using:
+
+```bash
+pip install tensorflow matplotlib
 ```
