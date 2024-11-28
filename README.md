@@ -106,6 +106,7 @@ pip install torch transformers faiss-cpu PyPDF2
 ```
 
 # 6.Text-to-Speech System Using Quantized Model
+## Project Overiew
 
 This project demonstrates a simple Text-to-Speech (TTS) system that converts input text into an audio file using a pre-trained quantized TTS model. The model generates natural-sounding speech by synthesizing mel-spectrograms and converting them into audio waveforms. The quantized model used in this project is the Tacotron2-DDC model from the TTS library.It utilizes the Tacotron2-DDC architecture for high-quality speech synthesis. Quantization is a technique applied to deep learning models to reduce their size and speed up inference without significantly sacrificing performance. 
 
@@ -154,4 +155,24 @@ Install the required libraries using:
 
 ```bash
 pip install transformers torch
+```
+
+# 8.Few-Shot Learning for Image Classification
+## Project Overview
+
+This project implements a few-shot learning model using Prototypical Networks to classify images into categories with minimal training samples per class. It employs TensorFlow and Keras to build a simple convolutional neural network (CNN) as the backbone for feature extraction and uses prototype-based classification to determine the closest class for query images.
+
+## How it works
+
+**1.Dataset Structure:** Organize images into subfolders by class (e.g., Cyclone/, Wildfire/).
+**2.Model:** A CNN extracts features. Class prototypes are the mean of support set embeddings.
+**3.Classification:** Query images are classified by their nearest prototype.
+**4.Training:** Optimizes the model to improve classification accuracy using support and query sets.
+
+## Required Libraries
+
+Install the required libraries using:
+
+```bash
+pip install tensorflow numpy opencv-python scikit-learn pillow
 ```
