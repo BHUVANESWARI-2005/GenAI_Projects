@@ -165,8 +165,11 @@ This project implements a few-shot learning model using Prototypical Networks to
 ## How it works
 
 **1.Dataset Structure:** Organize images into subfolders by class (e.g., Cyclone/, Wildfire/).
+
 **2.Model:** A CNN extracts features. Class prototypes are the mean of support set embeddings.
+
 **3.Classification:** Query images are classified by their nearest prototype.
+
 **4.Training:** Optimizes the model to improve classification accuracy using support and query sets.
 
 ## Required Libraries
