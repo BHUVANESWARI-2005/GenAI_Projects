@@ -209,3 +209,34 @@ Install the required libraries using:
 ```bash
 pip install tensorflow matplotlib
 ```
+
+# 10.Text Generation With GPT-2 and Fine Tuning
+
+## Project Overview
+
+The objective of this project is to fine-tune the GPT-2 language model for generating creative, contextually relevant text based on user-provided prompts. By leveraging a custom dataset, the model adapts to specific domains like storytelling, dialogue creation, or content generation. This enhances GPT-2's ability to produce high-quality, specialized outputs for various applications.
+
+## How it works
+**1.Pre-trained Model:**
+The project starts with the base GPT-2 model, which has been pre-trained on large-scale text data.
+
+**2.Custom Dataset:**
+Mention the dataset path (your_dataset_path.txt) is used to fine-tune GPT-2. The dataset should contain text samples that align with the intended use case (e.g., creative writing, conversational AI).
+
+**3.Fine-Tuning:**
+Using Hugging Face's Trainer API:
+
+**i**.The model is trained on the custom dataset.
+
+**ii**.Its weights are updated to improve performance on the specific text style or domain represented by the dataset.
+
+**4.Text Generation:**
+Once fine-tuned, the model generates coherent and contextually relevant text based on user-provided prompts. It uses the pipeline API from Hugging Face for easy integration.
+
+## Required Libraries
+
+Install the required libraries using:
+
+```bash
+pip install transformers datasets
+```
